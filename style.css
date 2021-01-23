@@ -1,2 +1,22 @@
+#card{
+    width: 350px;
+    height: 500px;
+    display: block;
+    margin: auto auto;
+}
+#card img{
+    margin: 140px auto auto auto;
+    border-radius: 100%;
+    border: 3px solid white ;
+}
+
+
+
+
+
+
+
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
