@@ -3,9 +3,13 @@ body{
     margin: 0;
     height: 100vh;
     position: relative;
+    overflow: hidden; /* les dépassements seront masqués */
+    background: hsl(185, 75%, 39%) -200px -550px no-repeat url(images/bg-pattern-top.svg);
 }
-#bg{
-    z-index: -1;
+#bottom{
+    display: absolute;
+    padding-top: 375px;
+    padding-left: 750px;
 }
 #card{
     width: 350px;
@@ -13,12 +17,16 @@ body{
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 20px;
 }
 span{
     font-family: Kumbh Sans;
 }
-#card svg{
+#banner{
     border-radius: 20px 20px 0 0;
+    height: 140px;
+    background: no-repeat url(images/bg-pattern-card.svg);
 }
 #card img{
     border-radius: 100%;
@@ -27,10 +35,9 @@ span{
     margin-left: 125px;
 }
 #card #profil{
-    display: block;
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 #card #profil #name{
     font-weight: 700;
@@ -48,11 +55,11 @@ span{
 #card #social{
     height: 150px;
     width: 350px;
-    border-top: 1px solid black;
+    border-top: 1px solid  hsla(0, 0%, 59%, 0.322);
     display: grid;
     grid-template-columns: auto auto auto;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 25px;
     border-radius: 0 0 20px 20px;
 }
 #card #social span{
@@ -60,8 +67,8 @@ span{
     font-size: 18px;
 }
 #card #social .subtitle{
-    padding-top: 5px;
-    font-size: 16px;
+    font-size: 12px;
+    letter-spacing: 0.1em;
     font-weight: 400;
     color: hsl(0, 0%, 59%);;
 }
