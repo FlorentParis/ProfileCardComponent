@@ -4,9 +4,12 @@ body{
     height: 100vh;
     position: relative;
 }
+#bg{
+    z-index: -1;
+}
 #card{
     width: 350px;
-    height: 400px;
+    height: 375px;
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
@@ -50,12 +53,14 @@ span{
     grid-template-columns: auto auto auto;
     text-align: center;
     padding-top: 20px;
+    border-radius: 0 0 20px 20px;
 }
 #card #social span{
     font-weight: 700;
     font-size: 18px;
 }
 #card #social .subtitle{
+    padding-top: 5px;
     font-size: 16px;
     font-weight: 400;
     color: hsl(0, 0%, 59%);;
