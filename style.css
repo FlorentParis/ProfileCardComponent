@@ -23,12 +23,26 @@ span{
     margin-top: -50px;
     margin-left: 125px;
 }
-#card #profil span{
+#card #profil{
+    display: block;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#card #profil #name{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+#card #profil #age{
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+#card #profil #city{
+    color: hsl(0, 0%, 59%);
 }
 #card #social{
     height: 150px;
-    width: 100vw;
+    width: 350px;
     border-top: 1px solid black;
 }
 .attribution {
