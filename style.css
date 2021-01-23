@@ -6,7 +6,7 @@ body{
 }
 #card{
     width: 350px;
-    height: 500px;
+    height: 400px;
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
@@ -32,10 +32,12 @@ span{
 #card #profil #name{
     font-weight: 700;
     margin-bottom: 5px;
+    font-size: 18px;
 }
 #card #profil #age{
     color: hsl(0, 0%, 59%);
     font-weight: 400;
+    font-size: 16px;
 }
 #card #profil #city{
     color: hsl(0, 0%, 59%);
@@ -44,6 +46,19 @@ span{
     height: 150px;
     width: 350px;
     border-top: 1px solid black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    padding-top: 20px;
+}
+#card #social span{
+    font-weight: 700;
+    font-size: 18px;
+}
+#card #social .subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);;
 }
 .attribution {
     font-size: 11px;
